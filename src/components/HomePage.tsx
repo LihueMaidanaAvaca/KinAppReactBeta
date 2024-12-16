@@ -51,7 +51,7 @@ function HomePage() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{ paddingTop: '40px' }}>
       {/* Mostrar las imágenes una al lado de la otra */}
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
         <img src={kinData.toneImage} alt="Imagen de tono" style={{ width: '100px', height: 'auto' }} />  
