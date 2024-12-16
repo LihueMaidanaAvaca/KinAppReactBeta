@@ -66,7 +66,7 @@ function HomePage() {
           align="center" 
           sx={{ marginTop: '20px', fontWeight: 'bold', fontSize: '50px' }}  
         >
-          Kin: {kinNumber}
+          Kin es: {kinNumber}
         </Typography>
       )}
 
