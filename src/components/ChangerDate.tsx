@@ -13,8 +13,8 @@ function ChangerDate() {
   }, []); // El array vacío asegura que se ejecute solo una vez al montar el componente
 
   return (
-    <div style={{ textAlign: 'center', padding: '3px', background: '#f0f0f0' }}>
-      <h3>{currentDate}</h3>
+    <div style={{ textAlign: 'start', padding: '3px', background: '#f0f0f0' }}>
+      <h2>{currentDate}</h2>
     </div>
   );
 }
