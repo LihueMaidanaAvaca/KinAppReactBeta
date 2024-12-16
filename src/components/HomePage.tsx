@@ -73,7 +73,7 @@ function HomePage() {
             id="day"
             type="number"
             value={day}
-            onChange={(e) => setDay(Number(e.target.value))}
+            onChange={(e) => setDay(Math.min(31, Math.max(1, Number(e.target.value))))}
             style={{
               width: '100%',
               fontSize: '20px',
@@ -94,7 +94,7 @@ function HomePage() {
             id="month"
             type="number"
             value={month}
-            onChange={(e) => setMonth(Number(e.target.value))}
+            onChange={(e) => setMonth(Math.min(12, Math.max(1, Number(e.target.value))))}
             style={{
               width: '100%',
               fontSize: '20px',
