@@ -54,8 +54,8 @@ function HomePage() {
     <div style={{ padding: '20px' }}>
       {/* Mostrar las imágenes una al lado de la otra */}
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
-        <img src={kinData.toneImage} alt="Imagen de tono" style={{ width: '25px', height: 'auto' }} />  
-        <img src={kinData.sealImage} alt="Imagen de sello" style={{ width: '100px', height: 'auto', marginRight: '38px' }} />  
+        <img src={kinData.toneImage} alt="Imagen de tono" style={{ width: '100px', height: 'auto' }} />  
+        <img src={kinData.sealImage} alt="Imagen de sello" style={{ width: '200px', height: 'auto', marginRight: '38px' }} />  
       </div>
 
       {/* Mostrar el número Kin calculado */}
@@ -78,7 +78,7 @@ function HomePage() {
               width: '100%',
               fontSize: '20px',
               fontWeight: 'bold',
-              padding: '10px',
+              padding: '3px',
               textAlign: 'center',
               borderRadius: '8px',
               backgroundColor: '#f5f5f5',
