@@ -67,7 +67,7 @@ function HomePage() {
 
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
         {/* Fila para Día */}
-        <div style={{ width: '100%', maxWidth: '300px' }}>
+        <div style={{ width: '100%', maxWidth: '60px' }}>
           <label htmlFor="day">Día</label>
           <input
             id="day"
@@ -78,7 +78,7 @@ function HomePage() {
               width: '100%',
               fontSize: '20px',
               fontWeight: 'bold',
-              padding: '3px',
+              padding: '4px',
               textAlign: 'center',
               borderRadius: '8px',
               backgroundColor: '#f5f5f5',
@@ -88,7 +88,7 @@ function HomePage() {
         </div>
 
         {/* Fila para Mes */}
-        <div style={{ width: '100%', maxWidth: '300px' }}>
+        <div style={{ width: '100%', maxWidth: '60px' }}>
           <label htmlFor="month">Mes</label>
           <input
             id="month"
@@ -97,9 +97,9 @@ function HomePage() {
             onChange={(e) => setMonth(Number(e.target.value))}
             style={{
               width: '100%',
-              fontSize: '40px',
+              fontSize: '20px',
               fontWeight: 'bold',
-              padding: '10px',
+              padding: '4px',
               textAlign: 'center',
               borderRadius: '8px',
               backgroundColor: '#f5f5f5',
@@ -109,7 +109,7 @@ function HomePage() {
         </div>
 
         {/* Fila para Año */}
-        <div style={{ width: '100%', maxWidth: '300px' }}>
+        <div style={{ width: '100%', maxWidth: '100px' }}>
           <label htmlFor="year">Año</label>
           <input
             id="year"
@@ -118,9 +118,9 @@ function HomePage() {
             onChange={(e) => setYear(Number(e.target.value))}
             style={{
               width: '100%',
-              fontSize: '40px',
+              fontSize: '20px',
               fontWeight: 'bold',
-              padding: '10px',
+              padding: '4px',
               textAlign: 'center',
               borderRadius: '8px',
               backgroundColor: '#f5f5f5',
