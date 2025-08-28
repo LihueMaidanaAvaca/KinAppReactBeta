@@ -79,7 +79,12 @@ function HomePage() {
             id="day"
             type="number"
             value={day}
-            onChange={(e) => setDay(Math.min(31, Math.max(1, Number(e.target.value))))}
+            onChange={(e) => setDay(Number(e.target.value))}
+            onBlur={() => {
+              const num = Number(day);
+              if (!num) return setDay(1);
+              setDay(Math.min(31, Math.max(1, num)));
+            }}
             style={{
               width: '100%',
               fontSize: '20px',
@@ -127,6 +132,11 @@ function HomePage() {
             type="number"
             value={year}
             onChange={(e) => setYear(Number(e.target.value))}
+            onBlur={() => {
+              const num = Number(year);
+              if (!num) return setYear(1);
+              setYear(Math.min(9999, Math.max(1, num)));
+            }}
             style={{
               width: '100%',
               fontSize: '20px',
