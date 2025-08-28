@@ -18,7 +18,7 @@ function HomePage() {
   useEffect(() => {
     const today = new Date();
     const currentDay = today.getDate();
-    const currentMonth = today.getMonth() + 1; 
+    const currentMonth = today.getMonth() + 1;
     const currentYear = today.getFullYear();
 
     setDay(currentDay);
@@ -28,14 +28,14 @@ function HomePage() {
     const result = numbersToKin(currentDay, currentMonth, currentYear);
     setKinNumber(result); // Establecer el número kin calculado
 
-    const toneResult = kinToTone(result); 
+    const toneResult = kinToTone(result);
     const sealResult = kinToSeal(result);
 
     setKinData({
       toneImage: require(`../images/tones/${toneResult}.png`),
       sealImage: require(`../images/seals/${sealResult}.png`),
     });
-  }, []); 
+  }, []);
 
   const calculateKin = () => {
     const result = numbersToKin(day, month, year);
@@ -54,8 +54,8 @@ function HomePage() {
     <div style={{ paddingTop: '40px' }}>
       {/* Mostrar las imágenes una al lado de la otra */}
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
-        <img src={kinData.toneImage} alt="Imagen de tono" style={{ width: '100px', height: 'auto' }} />  
-        <img src={kinData.sealImage} alt="Imagen de sello" style={{ width: '200px', height: 'auto', marginRight: '38px' }} />  
+        <img src={kinData.toneImage} alt="Imagen de tono" style={{ width: '100px', height: 'auto' }} />
+        <img src={kinData.sealImage} alt="Imagen de sello" style={{ width: '200px', height: 'auto', marginRight: '38px' }} />
       </div>
 
       {/* Mostrar el número Kin calculado */}
@@ -94,7 +94,12 @@ function HomePage() {
             id="month"
             type="number"
             value={month}
-            onChange={(e) => setMonth(Math.min(12, Math.max(1, Number(e.target.value))))}
+            onChange={(e) => setMonth(e.target.value)}
+            onBlur={() => {
+              const num = Number(month);
+              if (!num) return setMonth(1);
+              setMonth(Math.min(12, Math.max(1, num)));
+            }}
             style={{
               width: '100%',
               fontSize: '20px',
