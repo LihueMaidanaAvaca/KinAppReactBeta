@@ -1,5 +1,6 @@
 export default function dayMonthToNumber(day: number, month: number): number {
     // Verificar que el día esté en un rango válido
+    console.log("day", day, "month", month)
     if (day < 1 || day > 31) {
       return -1;  // Valor de error cuando el día no es válido
     }

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #8f8f8f;
+  background: #ff8513;
 }
 
 code {
@@ -17,7 +17,7 @@ code {
   max-width: 768px;   /* ancho máximo tipo tablet vertical */  
   margin: 0 auto;     /* centrar horizontalmente */  
   padding: 1rem;      /* opcional: espacio interno */  
-  background: #fff;   /* opcional: darle fondo blanco */  
-  min-height: 100vh;  /* que ocupe toda la altura */  
+  background: #ffb36d;   /* opcional: darle fondo blanco */  
+  min-height: 95vh;  /* que ocupe toda la altura */  
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* opcional: darle "carta" */  
 }
