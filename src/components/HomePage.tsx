@@ -58,7 +58,7 @@ function HomePage() {
       {/* Mostrar el número Kin calculado */}
       {kinNumber !== null && (
         <h1 style={{ marginTop: '20px', fontWeight: 'bold', textAlign: 'center' }}>
-          Kin es: {kinNumber}
+          Kin : {kinNumber}
         </h1>
       )}
 

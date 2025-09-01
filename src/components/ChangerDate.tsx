@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
 function ChangerDate() {
-  // Estado para almacenar la fecha
   const [currentDate, setCurrentDate] = useState<string>('');
 
-  // Usar useEffect para establecer la fecha cuando el componente se monte
   useEffect(() => {
     const today = new Date();
-    // Formateamos la fecha a un formato más legible
-    const formattedDate = today.toLocaleDateString(); // Puedes personalizar el formato
-    setCurrentDate(formattedDate);
-  }, []); // El array vacío asegura que se ejecute solo una vez al montar el componente
+    // Convertimos a formato ISO corto (YYYY-MM-DD) que entiende <input type="date">
+    const isoDate = today.toISOString().split('T')[0];
+    setCurrentDate(isoDate);
+  }, []);
 
   return (
     <div style={{ textAlign: 'start', padding: '3px', background: '#f0f0f0', margin: '3px' }}>
-      <h2 style={{ margin: '5px' }}>{currentDate}</h2>
+      <label htmlFor="fecha" style={{ marginRight: '8px' }}>Selecciona una fecha:</label>
+      <input
+        type="date"
+        id="fecha"
+        name="fecha"
+        value={currentDate}
+        onChange={(e) => setCurrentDate(e.target.value)}
+      />
     </div>
   );
 }
