@@ -14,7 +14,7 @@ const sealNames = [
   "Mago", "Águila", "Guerrero", "Tierra", "Espejo", "Tormenta"  
 ];  
   
-export default function KinData({ kinNumber }: { kinNumber: number }): { toneNumber: number, sealNumber: number, toneName: string, sealName: string } {
+export default function kinData({ kinNumber }: { kinNumber: number }): { toneNumber: number, sealNumber: number, toneName: string, sealName: string } {
   const toneNumber = kinToTone(kinNumber);  
   const sealNumber = kinToSeal(kinNumber);  
   
