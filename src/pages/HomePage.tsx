@@ -25,15 +25,16 @@ function HomePage({ selectedDate }: HomePageProps) {
       {/* Mostrar el número Kin calculado */}
       {kinData?.kinNumber && (
         <h1 style={{ marginTop: '20px', fontWeight: 'bold', textAlign: 'center' }}>
-          Kin : {kinData.kinNumber}
+          Kin : {kinData.kinNumber}<br/>
+          {kinData.sealName} {kinData.toneName}
         </h1>
       )}
 
       {/* Mostrar info de tono y sello */}
       {kinData && (
         <h1 style={{ textAlign: 'center' }}>
-          Tono: {kinData.toneName} <br />
-          Sello: {kinData.sealName}
+          Tono Lunar: {kinData.toneName} <br />
+          Sello Solar: {kinData.sealName}
         </h1>
       )}
     </div>
