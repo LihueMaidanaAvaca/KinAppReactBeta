@@ -42,21 +42,21 @@ function HomePage({ selectedDate }: HomePageProps) {
 
       {/* Mostrar info detallada de tono y sello */}
       {kinInfo && (
-        <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
+        <div style={{ textAlign: 'left', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
           <div style={{ marginBottom: '30px' }}>
-            <h2 style={{ color: '#3f51b5', marginBottom: '10px' }}>
+            <h2 style={{ marginBottom: '10px' }}>
               Tono {kinInfo.toneNumber}: {kinInfo.toneName}
             </h2>
-            <p style={{ fontSize: '16px', lineHeight: '1.5', color: '#666' }}>
+            <p style={{ fontSize: '16px', lineHeight: '1.5', color: '#484848ff' }}>
               {kinInfo.toneDescription}
             </p>
           </div>
           
           <div>
-            <h2 style={{ color: '#3f51b5', marginBottom: '10px' }}>
+            <h2 style={{ marginBottom: '10px' }}>
               Sello {kinInfo.sealNumber}: {kinInfo.sealName}
             </h2>
-            <p style={{ fontSize: '16px', lineHeight: '1.5', color: '#666' }}>
+            <p style={{ fontSize: '16px', lineHeight: '1.5', color: '#484848ff' }}>
               {kinInfo.sealDescription}
             </p>
           </div>
