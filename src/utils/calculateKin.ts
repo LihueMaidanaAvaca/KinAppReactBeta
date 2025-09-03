@@ -1,7 +1,7 @@
 import numbersToKin from './numbersToKin.ts';
 import kinToTone from './kinToTone.ts';
 import kinToSeal from './kinToSeal.ts';
-import kinData from './kinData.ts';
+import kinDetails from './kinDetails.ts';
 
 // Auxiliar para evitar el bug de UTC
 function safeDateFromString(dateString: string): Date {
@@ -30,8 +30,8 @@ export function calculateKin(dateString: string): KinResult {
 
   return {
     kinNumber,
-    toneName: kinData({ kinNumber }).toneName,
-    sealName: kinData({ kinNumber }).sealName,
+    toneName: kinDetails({ kinNumber }).toneName,
+    sealName: kinDetails({ kinNumber }).sealName,
     toneImage: require(`../images/tones/${toneResult}.png`),
     sealImage: require(`../images/seals/${sealResult}.png`),
   };
