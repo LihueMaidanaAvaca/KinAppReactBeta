@@ -32,11 +32,9 @@ function ChangerDate({ selectedDate, onDateChange }: ChangerDateProps) {
         justifyContent: 'flex-end',
         alignItems: 'center',
         padding: '10px',
-        backgroundColor: '#f8f8f8',
-        borderRadius: '8px',
+        backgroundColor: '#9c5300ff',
         boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
         gap: '8px',
-        margin: '10px 0',
       }}
     >
       {/* Botón izquierdo con triángulo */}
@@ -68,21 +66,22 @@ function ChangerDate({ selectedDate, onDateChange }: ChangerDateProps) {
           WebkitAppearance: 'none',    // Safari/Chrome
           MozAppearance: 'none',       // Firefox
           outline: 'none',
-          border: '1px solid #ccc',
+          border: '1px solid #cccccc00',
           borderRadius: '8px',
-          padding: '8px 12px',
+          padding: '8px ',
           fontSize: '16px',
           fontFamily: 'inherit',
-          backgroundColor: '#fff',
-          color: '#333',
+          fontWeight: 500,
+          backgroundColor: '#ffffff00',
+          color: '#ffffffff',
           transition: 'all 0.2s ease-in-out',
           boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
         }}
         onFocus={(e) =>
-          (e.currentTarget.style.borderColor = '#007bff')
+          (e.currentTarget.style.borderColor = '#ffffffff')
         }
         onBlur={(e) =>
-          (e.currentTarget.style.borderColor = '#ccc')
+          (e.currentTarget.style.borderColor = '#cccccc00')
         }
       />
 

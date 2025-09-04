@@ -16,8 +16,7 @@ code {
 #root {  
   max-width: 768px;   /* ancho máximo tipo tablet vertical */  
   margin: 0 auto;     /* centrar horizontalmente */  
-  padding: 1rem;      /* opcional: espacio interno */  
   background: #ffb36d;   /* opcional: darle fondo blanco */  
-  min-height: 95vh;  /* que ocupe toda la altura */  
+  min-height: 100vh;  /* que ocupe toda la altura */  
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* opcional: darle "carta" */  
 }
